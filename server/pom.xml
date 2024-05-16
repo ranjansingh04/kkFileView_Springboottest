@@ -31,6 +31,13 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+         <repository>
+                 <id>com.devzery</id>
+                 <name>logging</name>
+                 <url>https://maven.pkg.github.com/devzery-services/springboot_logging</url>
+                 <releases><enabled>true</enabled></releases>
+                 <snapshots><enabled>true</enabled></snapshots>
+         </repository>
     </repositories>
 
     <dependencies>
@@ -38,6 +45,12 @@
             <groupId>org.jodconverter</groupId>
             <artifactId>jodconverter-local</artifactId>
             <version>${jodconverter.version}</version>
+        </dependency>\
+
+         <dependency>
+            <groupId>com.devzery</groupId>
+            <artifactId>logging</artifactId>
+            <version>1.0.0-Javax</version>
         </dependency>
 
         <!-- web start -->
