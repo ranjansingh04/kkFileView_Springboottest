@@ -11,9 +11,12 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.util.StopWatch;
 
+import com.devzery.logging.LoggingEnabled;
+
 @SpringBootApplication
 @EnableScheduling
 @ComponentScan(value = "cn.keking.*")
+@LoggingEnabled(apiKey = "6I7SNwDD3CVEU0HmsTFBDm", sourceName = "Java-application-Test")
 public class ServerMain {
 
     private static final Logger logger = LoggerFactory.getLogger(ServerMain.class);
